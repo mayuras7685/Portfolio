@@ -11,6 +11,20 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
+def txt(a, b):
+  col1, col2 = st.columns([4,1])
+  with col1:
+    st.markdown(a)
+  with col2:
+    st.markdown(b)
+
+def txt3(a, b):
+  col1, col2 = st.columns([1,2])
+  with col1:
+    st.markdown(a)
+  with col2:
+    st.markdown(b)
+
 
 lottie_url_hello = "https://assets1.lottiefiles.com/packages/lf20_vfpu2rpp.json"
 
@@ -33,39 +47,66 @@ with st.container():
 
 st.title('Eduaction 📖')
 
-st.write('-----------')
+# st.write('-----------')
 
-with st.container():
-    col3, col4 =st.columns((2,1))
-    with col3:
-        st.write('Vishwakarma Government Engineering College, Ahmedabad')
-        st.text('Bachelors in Engineering: Electronics and Communication ')
+# with st.container():
+#     col3, col4 =st.columns((2,1))
+#     with col3:
+#         st.write('Vishwakarma Government Engineering College, Ahmedabad')
+#         st.text('Bachelors in Engineering: Electronics and Communication ')
 
-    with col4:
-        st.write('June-2024 ***(expected)***')
+#     with col4:
+#         st.write('June-2024 ***(expected)***')
 
-st.write('-----------')
+# st.write('-----------')
 
-with st.container():
-    col3, col4 =st.columns((2,1))
-    with col3:
-        st.write('Axay HighSchool, Ahmedabad')
-        st.text('GSHEB (Class XII)')
+# with st.container():
+#     col3, col4 =st.columns((2,1))
+#     with col3:
+#         st.write('Axay HighSchool, Ahmedabad')
+#         st.text('GSHEB (Class XII)')
 
-    with col4:
-        st.write('March-2020')
+#     with col4:
+#         st.write('March-2020')
 
-st.write('-----------')
+# st.write('-----------')
 
-with st.container():
-    col3, col4 =st.columns((2,1))
-    with col3:
-        st.write('Shriji Vidhyalay, Ahmedabad')
-        st.text('GSHEB (Class X)')
+# with st.container():
+#     col3, col4 =st.columns((2,1))
+#     with col3:
+#         st.write('Shriji Vidhyalay, Ahmedabad')
+#         st.text('GSHEB (Class X)')
 
-    with col4:
-        st.write('March-2018')
-st.write('-----------')
+#     with col4:
+#         st.write('March-2018')
+# st.write('-----------')
+
+
+
+txt('**Bachelors in Engineering** (Electronics and Communication), *Vishwakarma Government Engineering College*, Ahmedabad',
+'2020-2024')
+st.markdown('''
+- CGPA: `6.89`
+- 
+-
+''')
+
+txt('**HSC (Class XII)**, *Axay Highschool*, Ahmedabad',
+'2020')
+st.markdown('''
+- Percentage: `69.23`
+-  
+-
+''')
+
+txt('**SSC (Class X)**, *R.J Patel Shriji Vidhyalaya*, Ahmedabad',
+'2018')
+st.markdown('''
+- Percentage: `75.16`
+- 
+-
+''')
+
 
     
 # with st.spinner(text="Building line"):
@@ -73,33 +114,58 @@ st.write('-----------')
 #         data = f.read()
 #         timeline(data, height=400)
 
+with st.container():
+   col5, col6 = st.columns((2,2))
+   with col5:
+      st.write('')
+   with col6:
+      st.write('')
+
+with st.container():
+   col7, col8 = st.columns((2,2))
+   with col7:
+      st.write('')
+   with col8:
+      st.write('')
+
 st.title('Skills & Tools ⚒️')
 
 
-with st.container():
-    col5, col6, col7, col8= st.columns((1, 1, 1, 1))
+# with st.container():
+#     col5, col6, col7, col8= st.columns((1, 1, 1, 1))
 
-    with col5:
-        st.button('Python')
-        st.button('Computer Vision')
-        st.button('NLP')
+#     with col5:
+#         st.button('Python')
+#         st.button('Computer Vision')
+#         st.button('NLP')
     
-    with col6:
-        st.button('Flask')
-        st.button('YOLO')
-        st.button('TesorFlow')
+#     with col6:
+#         st.button('Flask')
+#         st.button('YOLO')
+#         st.button('TesorFlow')
 
-    with col7:
-        st.button('Mongodb')
-        st.button('MySQL')
-        st.button('Tableau')
+#     with col7:
+#         st.button('Mongodb')
+#         st.button('MySQL')
+#         st.button('Tableau')
 
-    with col8:
-        st.button('Colab')
-        st.button('Streamlit')
-        st.button('FastAPI')
-st.write('-----')
+#     with col8:
+#         st.button('Colab')
+#         st.button('Streamlit')
+#         st.button('FastAPI')
+# st.write('-----')
 
-st.title('Courses & Certification 📑')
+
+txt3('Programming', '`Python`')
+txt3('Data processing/wrangling', '`pandas`, `numpy`')
+txt3('Database', '`SQL`, `Mongodb`')
+txt3('Data visualization', '`matplotlib`, `seaborn`, `plotly`')
+txt3('Machine Learning', '`scikit-learn`, `opencv`, `SciPy`')
+txt3('Deep Learning', '`TensorFlow`, `Keras`')
+txt3('Web development', '`Flask`, `HTML`, `CSS`')
+txt3('Tools', '`Power Bi`, `Tableau`, `Colab`, `Roboflow`')
+txt3('Model deployment', '`streamlit`, `gradio`, `Heroku`, `Digital Ocean`')
+
+
 
 

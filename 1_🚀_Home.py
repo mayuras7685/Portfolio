@@ -33,3 +33,5 @@ with st.container():
         st_lottie(
             load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_vfpu2rpp.json"),
         )
+
+

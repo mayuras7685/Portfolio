@@ -1,6 +1,13 @@
 import streamlit as st
 
-st.header(":mailbox: Get In Touch With Me!")
+def txt2(a, b):
+  col1, col2 = st.columns([1,4])
+  with col1:
+    st.markdown(f'`{a}`')
+  with col2:
+    st.markdown(b)
+
+st.header("Get In Touch With Me! :mailbox:")
 
 
 contact_form = """
@@ -14,6 +21,20 @@ contact_form = """
 """
 
 st.markdown(contact_form, unsafe_allow_html=True)
+
+
+with st.container():
+   col7, col8 = st.columns((2,2))
+   with col7:
+      st.write('')
+   with col8:
+      st.write('')
+
+st.header('Social Media 🌐')
+txt2('LinkedIn', 'https://www.linkedin.com/in/mayur-asodara-366067206/')
+txt2('Twitter', 'https://twitter.com/MayurAsodara')
+txt2('GitHub', 'https://github.com/mayuras7685/')
+txt2('Instagram', 'https://instagram.com/mayur_7685/')
 
 # Use Local CSS File
 def local_css(file_name):
