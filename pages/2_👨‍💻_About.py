@@ -87,24 +87,25 @@ txt('**Bachelors in Engineering** (Electronics and Communication), *Vishwakarma 
 '2020-2024')
 st.markdown('''
 - CGPA: `6.89`
-- 
--
+
 ''')
+
+st.write('-----')
 
 txt('**HSC (Class XII)**, *Axay Highschool*, Ahmedabad',
 '2020')
 st.markdown('''
 - Percentage: `69.23`
--  
--
+
 ''')
+
+st.write('-----')
 
 txt('**SSC (Class X)**, *R.J Patel Shriji Vidhyalaya*, Ahmedabad',
 '2018')
 st.markdown('''
 - Percentage: `75.16`
-- 
--
+
 ''')
 
 
@@ -158,7 +159,7 @@ st.title('Skills & Tools ⚒️')
 
 txt3('Programming', '`Python`')
 txt3('Data processing/wrangling', '`pandas`, `numpy`')
-txt3('Database', '`SQL`, `Mongodb`')
+txt3('Database', '`Mysql`, `Mongodb`')
 txt3('Data visualization', '`matplotlib`, `seaborn`, `plotly`')
 txt3('Machine Learning', '`scikit-learn`, `opencv`, `SciPy`')
 txt3('Deep Learning', '`TensorFlow`, `Keras`')
