@@ -34,4 +34,8 @@ with st.container():
             load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_vfpu2rpp.json"),
         )
 
+#resume 
+# pdfFileObj = open('mayur_resume.pdf', 'rb')
+# st.sidebar.download_button('Resume',pdfFileObj,file_name='mayur_resume.pdf',mime='pdf')
+
 

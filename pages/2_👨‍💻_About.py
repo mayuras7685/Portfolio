@@ -4,6 +4,7 @@ from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
 import plotly.graph_objects as go
 from streamlit_timeline import timeline
+import streamlit.components.v1 as components
 
 def load_lottieurl(url: str):
     r = requests.get(url)
