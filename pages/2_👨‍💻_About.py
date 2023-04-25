@@ -46,7 +46,7 @@ with st.container():
         )
 
 
-st.title('education 📖')
+st.title('Education 📖')
 
 # st.write('-----------')
 
