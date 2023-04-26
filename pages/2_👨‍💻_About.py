@@ -53,7 +53,7 @@ with st.container():
    
 
 
-st.title('Eduaction 📖')
+st.title('Education 📖')
 
 # st.write('-----------')
 
