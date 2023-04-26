@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title='Experience', page_icon='💼' )
+
 st.title('Experience')
 st.write("Nothing ever becomes real 'til it is experienced.― John Keats")
 

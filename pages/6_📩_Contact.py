@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title='Contact', page_icon='📩' )
+
 def txt2(a, b):
   col1, col2 = st.columns([1,4])
   with col1:

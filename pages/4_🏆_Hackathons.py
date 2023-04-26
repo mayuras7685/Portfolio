@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-
+st.set_page_config(page_title='Hackathons', page_icon='🏆' )
  
 
 def txt(a, b, c, d, name, hed, img):
