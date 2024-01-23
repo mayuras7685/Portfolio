@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title='About', page_icon='👨‍💻' )
 
 #resume 
-pdfFileObj = open('mayur_resume.pdf', 'rb')
+pdfFileObj = open('Mayur_Asodara_Resume.pdf', 'rb')
 
 def load_lottieurl(url: str):
     r = requests.get(url)
