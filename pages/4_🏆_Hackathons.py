@@ -17,11 +17,13 @@ h3 = Image.open('./img/hackthisfall.png')
 h4 = Image.open('./img/dotslash.png')
 h5 = Image.open('./img/hackvengers.png')
 h6 = Image.open('./img/wittyhacks.png')
+h7 = Image.open('./img/hack4nu.png')
+h8 = Image.open('./img/hack4in.png')
 
 
 st.title('Hackathons')
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["HackSVIT", "Hackout'22", "Hackthisfall 3.0", "DotSlash 6.0", "HackVengers", "WittyHacks 3.0"])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(["HackSVIT", "Hackout'22", "Hackthisfall 3.0", "DotSlash 6.0", "HackVengers", "WittyHacks 3.0", "HackNUthon 4.0", "Hack for India"])
 
 with tab1:   
    txt('I participated HackSVIT By SVIT, Vasad. it was my first hackthon and started journey that never ends, to attending   such hackathon we can up to date with latest technology advancemnets, thier in hackthon we creted sort of feedback form that calculates the Happiness index of school students.',
@@ -92,3 +94,29 @@ During the hackathon, we worked hard and created a content recommendation system
       'Tourist Place Recommandtion System',
       'Wittyhacks 3.0',
       h6)
+
+with tab7:
+   txt("""attended a 24-hour hackathon called HackNUthon organized by Nirma University. It was an incredible experience to be a part of this hackathon and showcase our skills and knowledge.
+
+During the hackathon, we worked on problem statment provide by Sponsers - Rapidops, automate or Create new feature for CRM, we create dashboard application that capable of sells forecasting, customer churn prediction, chustomer classification etc.. sort of AutoML concept
+       
+       """,
+      'Skills', 
+      '`TensorFlow`, `Streamlit` , `Data Manuplation`, `EDA`, `Keras`',
+      'https://github.com/mayuras7685/HackNUthon-Unkils',
+      'ML for CRM',
+      'HackNUthon 4.0',
+      h7)
+
+with tab8:
+   txt("""attended a 24-hour hackathon called Hack For India organized by Indian Oil and Silver Ock University. It was an incredible experience to be a part of this hackathon and showcase our skills and knowledge.
+
+During the hackathon, we created smart camera for MSMEs, that solves problems like product count, defect detection, Anamoly detection, Risk detection etc. above features in one device Raspberry and atteched Webcam 
+       
+       """,
+      'Skills', 
+      '`TensorFlow`, `YOLO` , `Object Detection`, `IOT`, `Instance Detection`',
+      'https://github.com/mayuras7685/HackNUthon-Unkils',
+      'Smart Imaging Device',
+      'Hack For India',
+      h8)
