@@ -9,6 +9,23 @@ st.title('Projects')
 with st.container():
   col1,col2 = st.columns((1, 2))
   with col1:
+    st.image(Image.open('./img/p6.png'))
+  with col2:
+    st.subheader("CLIP - ALL IN ONE")
+    st.write("""
+   Streamlit application that demonstrates how to use OpenAI's CLIP model for a variety of natural language and computer vision tasks such as zero-shot classification, image clustering, text clustering, and semantic search.
+             """)
+
+    st.markdown('`OPENAI`, `CLIP`, `Streamlit`, `Scrapping`')
+
+    g6 = '[GitHub](https://github.com/mayuras7685/CLIP-ALL-IN-ONE)'
+    st.markdown(g6)
+
+st.write('---')
+
+with st.container():
+  col1,col2 = st.columns((1, 2))
+  with col1:
     st.image(Image.open('./img/p2.png'))
   with col2:
     st.subheader("Wild Animal Detection")
